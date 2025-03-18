@@ -40,7 +40,7 @@ export default function WorkExperienceForm() {
   return (
     <div id="work-experience" className="bg-white shadow-md rounded-lg p-4">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-lg font-bold">Work Experience</h2>
+        <h2 className="text-lg font-bold ml-2">Work Experience</h2>
         <button
           className="text-black-500 hover:underline"
           onClick={() => {

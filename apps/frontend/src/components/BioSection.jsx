@@ -14,7 +14,7 @@ export default function BioSection() {
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-md mb-5">
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex items-center justify-between mb-4 ml-2">
         <h2 className="text-lg font-bold">Bio</h2>
         <button
           className="text-black-500 hover:underline"
@@ -24,7 +24,7 @@ export default function BioSection() {
         </button>
       </div>
 
-      <p className="text-gray-600">{bio}</p>
+      <p className="text-gray-600 ml-2">{bio}</p>
 
       {/* Modal for Editing */}
       {isEditing && (

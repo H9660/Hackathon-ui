@@ -31,7 +31,7 @@ export default function SocialMediaLinks() {
   return (
     <div className="bg-white p-4 rounded-lg shadow-md">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-lg font-bold">Social Media Links</h2>
+        <h2 className="text-lg font-bold ml-2">Social Media Links</h2>
       </div>
 
       {links.length > 0 ? (
@@ -53,14 +53,14 @@ export default function SocialMediaLinks() {
           </div>
         ))
       ) : (
-        <p className="text-gray-500 italic">No links added yet.</p>
+        <p className="text-gray-500 italic ml-2">No links added yet.</p>
       )}
 
       <div
         className="flex items-center gap-2 cursor-pointer text-gray-500 hover:text-black mt-4"
         onClick={() => setShowModal(true)}
       >
-        <button className="text-xl font-bold">+</button>
+        <button className="text-xl font-bold ml-2">+</button>
         <span>Add New Link</span>
       </div>
 

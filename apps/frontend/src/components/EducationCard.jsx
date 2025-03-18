@@ -45,7 +45,7 @@ export default function EducationCard() {
   return (
     <div div id="education" className="bg-white p-4 rounded-lg shadow-md">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-lg font-bold">Education</h2>
+        <h2 className="text-lg font-bold ml-2">Education</h2>
         <button
           className="text-black-500 hover:underline"
   onClick={() => setShowModal(true)}

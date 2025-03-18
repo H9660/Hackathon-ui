@@ -29,7 +29,7 @@ export default function LanguageSection() {
     <Card className="bg-white shadow-md rounded-lg mb-5">
       <CardContent className="p-4">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold">Preferred Language</h2>
+          <h2 className="text-lg font-bold ml-2">Preferred Language</h2>
           <button
             className="text-black-500 hover:underline"
             onClick={() => setIsEditing(true)}

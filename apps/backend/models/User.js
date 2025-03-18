@@ -1,11 +1,22 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-    name: { type: String, required: true },
-    email: { type: String, required: true, unique: true },
-    phone: { type: String },
-
-    bio: { type: String },
+    personalInfo: {
+        name: { type: String, required: true },
+        email: { type: String, required: true, unique: true },
+        phone: { type: String },
+        bio: { type: String },
+        gender: { type: String },
+        age: { type: Number },
+        address: {
+            address1: { type: String },
+            address2: { type: String },
+            city: { type: String },
+            state: { type: String },
+            pincode: { type: String },
+            country: { type: String }
+        }
+    },
 
     education: [
         {
@@ -42,13 +53,6 @@ const userSchema = new mongoose.Schema({
 
     preferredLanguages: [{ type: String }],
 
-    contact: {
-        address: { type: String },
-        city: { type: String },
-        state: { type: String },
-        country: { type: String }
-    },
-
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now }
 });
@@ -59,6 +63,4 @@ userSchema.pre('save', function (next) {
     next();
 });
 
-const User = mongoose.model('User', userSchema);
-
-module.exports = User;
+export const User = mongoose.model('User', userSchema);

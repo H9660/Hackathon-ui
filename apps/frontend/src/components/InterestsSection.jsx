@@ -29,7 +29,7 @@ export default function InterestCard() {
     <Card className="bg-white shadow-md rounded-lg mb-5">
       <CardContent className="p-4">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold">Interested Topics</h2>
+          <h2 className="text-lg font-bold ml-2">Interested Topics</h2>
           <button
             className="text-black-500 hover:underline"
             onClick={() => setShowModal(true)}
