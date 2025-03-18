@@ -33,21 +33,42 @@ export default function PersonalInfo() {
   return (
     <div className="relative mb-5">
       <Card className="bg-white shadow-md rounded-lg">
-        <CardContent className="p-4">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-bold">Personal Information</h2>
-            <button
-              className="text-black-500 hover:underline"
-              onClick={() => setShowModal(true)}
-            >
-              Edit
-            </button>
-          </div>
-          <p>First Name: {personalData.firstname}</p>
-          <p>Last Name: {personalData.lastname}</p>
-          <p>Email: {personalData.email}</p>
-        </CardContent>
-      </Card>
+  <CardContent className="p-6">
+    <div className="flex items-center justify-between mb-4">
+      <h2 className="text-lg font-bold">Personal Information</h2>
+      <button
+        className="text-black-500 hover:underline"
+        onClick={() => setShowModal(true)}
+      >
+        Edit
+      </button>
+    </div>
+
+    <div className="grid grid-cols-2 gap-y-3">
+      <p className="text-gray-500">First Name</p>
+      <p className="text-black">{personalData.firstname}</p>
+
+      <p className="text-gray-500">Last Name</p>
+      <p className="text-black">{personalData.lastname}</p>
+
+      <p className="text-gray-500">Email</p>
+      <p className="text-black">{personalData.email}</p>
+
+      <p className="text-gray-500">Gender</p>
+      <p className="text-black">{personalData.gender}</p>
+
+      <p className="text-gray-500">Age</p>
+      <p className="text-black">{personalData.age}</p>
+
+      <p className="text-gray-500">Address</p>
+      <p className="text-black">
+        {personalData.address1}, {personalData.address2}, {personalData.city},{" "}
+        {personalData.state} {personalData.pincode}, {personalData.country}
+      </p>
+    </div>
+  </CardContent>
+</Card>
+
 
       {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">

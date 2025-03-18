@@ -43,7 +43,7 @@ export default function EducationCard() {
   };
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-md">
+    <div div id="education" className="bg-white p-4 rounded-lg shadow-md">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-lg font-bold">Education</h2>
         <button

@@ -38,7 +38,7 @@ export default function WorkExperienceForm() {
   };
 
   return (
-    <div className="bg-white shadow-md rounded-lg p-4">
+    <div id="work-experience" className="bg-white shadow-md rounded-lg p-4">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-lg font-bold">Work Experience</h2>
         <button
